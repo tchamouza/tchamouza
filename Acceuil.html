@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Securite informatique</title>
+    <link href="../css/Acceuil.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-shape">
+                    <span class="logo-initial">M S</span>
+                </div>
+                <div class="logo-text">
+                    <span class="school-name">MIYAYI-SOUKOULOU</span>
+                    <span class="school-motto">Savoir • Grandir • Réussir</span>
+                </div>
+            </div>
+
+                <nav>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleMenu()">&nbsp&nbsp &nbsp ☰ Menu &nbsp
+                            &nbsp &nbsp</button>
+                        <div class="dropdown-content" id="userInfo">
+                            <a href="Acceuil.html">Accueil</a>
+                            <a href="Seconnecter.html" target="_blank">Se
+                                connecter</a>
+                            <a href="inscription.html" target="_blank">Inscription</a>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+    </header>
+    <section class="container">
+        <section>
+            <div class="presentation">
+
+                <h2>Soyez les bienvenus à MIAYI-SOUKOULOU</h2>
+                <p>Un
+                    établissement dédié à la formation des experts en
+                    cybersécurité de demain. Nous vous offrons une formation
+                    de
+                    haut niveau, axée sur les dernières technologies et les
+                    meilleures pratiques en matière de sécurité des systèmes
+                    informatiques. Que vous soyez passionné par la
+                    protection
+                    des données, la gestion des réseaux ou la lutte contre
+                    les
+                    cybermenaces, nous vous préparons à relever les défis du
+                    monde numérique avec des compétences avancées et une
+                    expertise pratique.</p>
+
+            </div>
+
+        </section>
+
+        <section class="image-container">
+            <div class="image-box">
+                <div>
+                    <img src="../photo/logo.png" alt="icone" width="50px" height="50px">
+                </div>
+                <div>
+                    <a href="#programmes">Nos Formations &amp Diplomes</a>
+                </div>
+
+            </div>
+
+        </section><br><br>
+    </section> <br><br><br><br>
+    <h2 style="color: red;text-align: center;font-weight: bold;" id="programmes">Nos
+        Formations &amp Diplomes</h2>
+    <section class="beni" style="display: flex; justify-content: space-around; gap: 20px; padding: 20px;">
+        <div>
+            <h3>Niveau Bac+2</h3>
+            <p><strong>BTS Services Informatiques aux Organisations
+                    (SIO)</strong> : Ce diplôme propose deux options :</p>
+            <ul>
+                <li><strong>Solutions Logicielles et Applications Métiers
+                        (SLAM)</strong> : Axée sur le développement et la
+                    maintenance de solutions logicielles.</li>
+                <li><strong>Solutions d’Infrastructure, Systèmes et Réseaux
+                        (SISR)</strong> : Centrée sur la gestion des
+                    infrastructures réseau et des systèmes, avec une
+                    initiation à la sécurité informatique.</li>
+            </ul>
+            <p><strong>BUT Réseaux et Télécommunications</strong> : Ce
+                diplôme, anciennement DUT, offre une formation approfondie
+                en gestion et sécurisation des réseaux. Des parcours
+                spécialisés en cybersécurité sont disponibles à partir de la
+                deuxième année.</p>
+        </div>
+
+        <div>
+            <h3>Niveau Bac+3</h3>
+            <p><strong>Licence Professionnelle en Sécurité des Systèmes
+                    Informatiques</strong> : Cette formation permet aux
+                étudiants de se spécialiser en cybersécurité après un BTS ou
+                un BUT. Elle couvre des domaines tels que la protection des
+                données, la gestion des incidents et la mise en place de
+                politiques de sécurité.</p>
+            <p><strong>Bachelor en Cybersécurité</strong> : Proposé par
+                certaines écoles spécialisées ou d'ingénieurs, ce programme
+                se concentre sur les aspects pratiques de la cybersécurité,
+                préparant les étudiants à des postes opérationnels dans le
+                secteur.</p>
+        </div>
+
+        <div>
+            <h3>Master et Diplôme d'Ingénieur</h3>
+            <p><strong>Master en Cybersécurité</strong> : Offert par
+                plusieurs universités et écoles d'ingénieurs, ce diplôme
+                aborde des sujets avancés tels que la cryptographie, la
+                sécurité des réseaux et la gestion des incidents.</p>
+            <p><strong>Diplôme d’Ingénieur en Cybersécurité</strong> : Des
+                institutions comme CentraleSupélec, l'INSA Rennes ou l'ESIR
+                forment des experts capables de concevoir et de gérer des
+                systèmes sécurisés.</p>
+            <p><strong>Mastère Spécialisé (MS) en Cybersécurité</strong> :
+                Destiné aux professionnels souhaitant approfondir leurs
+                connaissances, proposé par l'IMT Atlantique et
+                CentraleSupélec.</p>
+        </div>
+    </section>
+
+</body>
+<script>
+    // Script pour le menu dropdown
+    function toggleMenu() {
+        const dropdownContent = document.getElementById("userInfo");
+        dropdownContent.classList.toggle("show");
+    }
+
+    // Fermer le menu si on clique ailleurs
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            const dropdowns = document.getElementsByClassName("dropdown-content");
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 MIAYI-SOUKOULOU. Tous droits
+            réservés.</p>
+        <p>📍 Adresse : Lome-Togo</p>
+        <p>📞 <a href="tel:+22892558895">+228 92 58 88 95</a></p>
+        <p>📧 <a
+                href="mailto:miayisoukoulou@gmail.com">miayisoukoulou@gmail.com</a>
+        </p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </p>
+    </div>
+</footer>
+
+</html>
